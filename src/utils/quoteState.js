@@ -6,7 +6,7 @@ export function getInitialQuoteState() {
 
   const parsedIds = storedIds === null || lengthIds === storedIds.length ? [] : storedIds
 
-  if (storedIds.length === lengthIds) {
+  if (storedIds !== null && storedIds.length === lengthIds) {
     localStorage.removeItem('ids')
   }
 
