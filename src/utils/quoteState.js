@@ -29,7 +29,7 @@ export function getInitialQuoteState() {
 
   localStorage.setItem('ids', JSON.stringify(sortedNextIds))
 
-  console.log('quoteState randomQuote-->: ', randomQuote);
+  console.log(randomQuote);
 
   return { randomQuote }
 }
